@@ -2,15 +2,16 @@ on:
   push:
     branches:
       -master
-      -second
+      
 
 
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-      -name : "Print Current Directory"
-      -run : pwd
+      - name : "Print Current Directory"
+      - run : pwd
       
 
