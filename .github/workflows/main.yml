@@ -18,3 +18,5 @@
       steps:
         - name: "Printing current directory"
           run: pwd
+        - name: "printing folder content"
+          run: ls
