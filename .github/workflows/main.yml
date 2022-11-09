@@ -12,5 +12,7 @@ jobs:
     steps:
       - name: "Print Current Directory"
         run: pwd
+      - name: "Print ahmed" 
+        run: echo ahmed
       
 
