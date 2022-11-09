@@ -19,3 +19,7 @@
         - uses: actions/checkout@v3
         - name: "DockerHub login"
           run: docker login --username ${{ secrets.Docker_Username }} --password ${{ secrets.Docker_Password }}
+        - name: "Build Docker image"
+          run: docker build -t ${{ secrets.Docker_Username }}/myimage .
+        - name: "pushing to dockerhub"
+          run: docker push ${{ secrets.Docker_Username }}/myimage
