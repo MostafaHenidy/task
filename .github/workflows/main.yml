@@ -16,8 +16,6 @@
 
 
       steps:
-        - name: "Printing current directory"
-          run: pwd
         - uses: actions/checkout@v3
-        - name: "printing folder content"
-          run: ls
+        - name: "DockerHub login"
+          run: docker login --username ${{ secrets.Docker_Username }} --password ${{ secrets.Docker_Password }}
